@@ -12,9 +12,12 @@ switch(firstQ){
     console.log(firstQ+' that is right!');
 
     break;
-    default:
+    case 'n':
         alert('You got that wrong sad!')
         console.log(firstQ+' wrong answare!');
+        break;
+    default:
+        alert('you didnt answare with yes or no');
         break;
 }
 let seconedQ = prompt('Am I Britain?Answare with y/n');
@@ -26,9 +29,12 @@ switch(seconedQ){
     alert('You got that right! good job!')
     console.log(seconedQ+' that is right!');
     break;
-    default:
+    case 'y':
         alert('You got that wrong sad!')
         console.log(seconedQ+' wrong answare!');
+        break;
+    default:
+        alert('you didnt answare with yes or no');
         break;
 }
 let thirdQ = prompt('Did I study at Prince Hamzah School?Answare with y/n');
@@ -40,9 +46,12 @@ switch(thirdQ){
     alert('You got that right! good job!')
     console.log(thirdQ+' that is right!');
     break;
-    default:
+    case 'n':
         alert('You got that wrong sad!')
         console.log(thirdQ+' wrong answare!');
+        break;
+    default:
+        alert('you didnt answare with yes or no');
         break;
 }
 let fourthQ = prompt('Am I studying at Ltuc?Answare with y/n');
@@ -54,9 +63,12 @@ switch(fourthQ){
     alert('You got that right! good job!')
     console.log(fourthQ+' that is right!');
     break;
-    default:
+    case 'n':
         alert('You got that wrong sad!')
         console.log(fourthQ+' wrong answare!');
+        break;
+    default:
+        alert('you didnt answare with yes or no');
         break;
 }
 let fifthQ = prompt('Do I like to work as a cook in the future?Answare with y/n');
@@ -68,9 +80,12 @@ switch(fifthQ){
     alert('You got that right! good job!')
     console.log(fifthQ+' that is right!');
     break;
-    default:
+    case 'y':
         alert('You got that wrong sad!')
         console.log(fifthQ+' wrong answare!');
+        break;
+    default:
+        alert('you didnt answare with yes or no');
         break;
 }
 alert('I hope you liked my about me site Mr.'+welcomeMsg+'!')
