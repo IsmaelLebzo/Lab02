@@ -1,4 +1,5 @@
 'use strict';
+let userScore = 0;
 let welcomeMsg = prompt('Hello and welcome to my about me site! May I ask what is ur name?');
 document.write('<h3> Welcome ' + welcomeMsg + '!</h3>')
 
@@ -10,7 +11,7 @@ switch (firstQ) {
     case 'y':
         alert('You got that right! good job!')
         console.log(firstQ + ' that is right!');
-
+        userScore++;
         break;
     case 'n':
         alert('You got that wrong sad!')
@@ -28,6 +29,7 @@ switch (seconedQ) {
     case 'n':
         alert('You got that right! good job!')
         console.log(seconedQ + ' that is right!');
+        userScore++;
         break;
     case 'y':
         alert('You got that wrong sad!')
@@ -45,6 +47,7 @@ switch (thirdQ) {
     case 'y':
         alert('You got that right! good job!')
         console.log(thirdQ + ' that is right!');
+        userScore++;
         break;
     case 'n':
         alert('You got that wrong sad!')
@@ -62,10 +65,12 @@ switch (fourthQ) {
     case 'y':
         alert('You got that right! good job!')
         console.log(fourthQ + ' that is right!');
+        userScore++;
         break;
     case 'n':
         alert('You got that wrong sad!')
         console.log(fourthQ + ' wrong answare!');
+        userScore++;
         break;
     default:
         alert('you didnt answare with yes or no');
@@ -79,6 +84,7 @@ switch (fifthQ) {
     case 'n':
         alert('You got that right! good job!')
         console.log(fifthQ + ' that is right!');
+        userScore++;
         break;
     case 'y':
         alert('You got that wrong sad!')
@@ -89,43 +95,37 @@ switch (fifthQ) {
         break;
 }
 alert('I hope you liked my about me site Mr.' + welcomeMsg + '!')
-for (let i = 0; i < 4 ; i++){
-    let sixthQ = prompt('In ur opinion how old am i?');
-    if (sixthQ > 23){
-       console.log('nope!');
-       alert('Nope that is high!')
+let correctAnswer = 23
+for (let i = 1; i <= 4; i++) {
+    let sixthQ = Number(prompt('In ur opinion how old am i?'));
+    if (sixthQ > correctAnswer) {
+        console.log('nope!');
+        alert('Nope that is high!')
     }
-    else if(sixthQ < 23){
+    else if (sixthQ < correctAnswer) {
         console.log('nope');
         alert('Nope that is low!')
     }
-    else if (sixthQ = 23){
+    else if (sixthQ === correctAnswer) {
         console.log('yes!');
-        alert('YES!')
+        alert('YES!');
+        userScore++;
         break;
-    }   
+    }
 }
 console.log('The correct answer is 23');
-for (let i = 0; i < 6 ; i++){
-    let hoursTook = [3,4,5]
+let hoursTook = [3, 4, 5]
+for (let i = 1; i <= 6; i++) {
     let seventhQ = prompt('how many hours did it take me to solve this code xD!');
-    if (seventhQ == hoursTook[0]){
-        console.log('yes!');
-        alert('YES!')
-        break;
-    }
-    else if (seventhQ == hoursTook[1]){
-        console.log('yes!');
-        alert('YES!')
-        break;
-    }
-    else if (seventhQ == hoursTook[2]){
-        console.log('yes!');
-        alert('YES!')
-        break;
-    }
-    else{
-        console.log('No!');
+    for(let j=0;j<hoursTook.length;j++){
+        if (seventhQ == hoursTook[j]) {
+            console.log('yes!');
+            alert('YES!');
+            i = 7;
+            userScore++;
+            break;
+        }
     }
 }
 console.log('The correct answers are 3,4,5')
+alert('Your score is '+ userScore);
