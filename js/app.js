@@ -3,6 +3,7 @@ let userScore = 0;
 let welcomeMsg = prompt('Hello and welcome to my about me site! May I ask what is ur name?');
 document.write('<h3> Welcome ' + welcomeMsg + '!</h3>')
 
+function first (){
 let firstQ = prompt('Is my name Ismael?Answare with y/n');
 if (firstQ !== null) {
     firstQ = firstQ.toLowerCase();
@@ -21,6 +22,8 @@ switch (firstQ) {
         alert('you didnt answare with yes or no');
         break;
 }
+}
+function seconde(){
 let seconedQ = prompt('Am I Britain?Answare with y/n');
 if (seconedQ !== null) {
     seconedQ = seconedQ.toLowerCase();
@@ -39,6 +42,8 @@ switch (seconedQ) {
         alert('you didnt answare with yes or no');
         break;
 }
+}
+function third(){
 let thirdQ = prompt('Did I study at Prince Hamzah School?Answare with y/n');
 if (thirdQ !== null) {
     thirdQ = thirdQ.toLowerCase();
@@ -57,6 +62,8 @@ switch (thirdQ) {
         alert('you didnt answare with yes or no');
         break;
 }
+}
+function fourth(){
 let fourthQ = prompt('Am I studying at Ltuc?Answare with y/n');
 if (fourthQ !== null) {
     fourthQ = fourthQ.toLowerCase();
@@ -76,6 +83,8 @@ switch (fourthQ) {
         alert('you didnt answare with yes or no');
         break;
 }
+}
+function fifth(){
 let fifthQ = prompt('Do I like to work as a cook in the future?Answare with y/n');
 if (fifthQ !== null) {
     fifthQ = fifthQ.toLowerCase();
@@ -94,8 +103,10 @@ switch (fifthQ) {
         alert('you didnt answare with yes or no');
         break;
 }
-alert('I hope you liked my about me site Mr.' + welcomeMsg + '!')
+}
 let correctAnswer = 23
+
+function sixth(){
 for (let i = 1; i <= 4; i++) {
     let sixthQ = Number(prompt('In ur opinion how old am i?'));
     if (sixthQ > correctAnswer) {
@@ -113,6 +124,8 @@ for (let i = 1; i <= 4; i++) {
         break;
     }
 }
+}
+function seventh(){
 console.log('The correct answer is 23');
 let hoursTook = [3, 4, 5]
 for (let i = 1; i <= 6; i++) {
@@ -128,4 +141,14 @@ for (let i = 1; i <= 6; i++) {
     }
 }
 console.log('The correct answers are 3,4,5')
+}
+first();
+seconde();
+third();
+fourth();
+fifth();
+alert('I hope you liked my about me site Mr.' + welcomeMsg + '!')
+sixth();
+seventh();
+
 alert('Your score is '+ userScore);
