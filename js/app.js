@@ -124,6 +124,7 @@ for (let i = 1; i <= 4; i++) {
         break;
     }
 }
+alert("right answare is 23!")
 }
 function seventh(){
 console.log('The correct answer is 23');
@@ -140,6 +141,7 @@ for (let i = 1; i <= 6; i++) {
         }
     }
 }
+alert('right answare is 3,4,5')
 console.log('The correct answers are 3,4,5')
 }
 first();
